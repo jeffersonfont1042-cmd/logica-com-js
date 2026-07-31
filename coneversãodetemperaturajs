@@ -1,0 +1,20 @@
+let unidade = prompt("unidade:")
+let temperatura = Number(prompt("temperatura:"))
+if (unidade=='c') {
+        status ='Fahrenheit';
+        console.log(temperatura*1.8+32, status)
+         status ='Kelvin';
+        console.log(temperatura+273, status)
+}
+else if (unidade=='f') {
+    status ='Celsius';
+        console.log((temperatura-32)/1.8, status)
+         status ='Kelvin';
+        console.log((temperatura-32)/1.8+273, status)
+}
+else if (unidade=='k') {
+        status ='Celsius';
+        console.log(temperatura-273, status)
+        status ='Fahrenheit';
+        console.log((temperatura-273)*1.8+32, status)
+}
